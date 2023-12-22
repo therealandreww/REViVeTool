@@ -3,21 +3,31 @@ https://github.com/therealandreww
 
 DESCRIPTION
 
-        REViVeTool is a macOS Feature Configuration Tool where you can toggle features that is included in latest macOS builds
-        but are not shown to the user.
+        REViVeTool is a macOS Feature Configuration Tool where you can toggle
+        features that are included in latest macOS builds but are not shown
+        to the user. It is safe to run, and supports a wide range of togglable
+        settings and features. This is completely supported on macOS, however
+        Apple did not intend users to access them.
 
-<!-->
-# REViVeTool 0.3.2
-## About The Project (ATP)
-The official REViVeTool repository was created at `09:05 PM, Dec 22, 2023 KST/GMT+9`. We want to thank everyone and our team **escapee** who made this possible. We will continue on building this repository, also a project to give macOS users a feel, where they rule their Mac they own.
+INSTALLATION
 
-## Requirements
-- **macOS (version 13/Ventura or higher)**
-- **a version of `git` installed**
-- **a stable internet connection**
-- <span style="color: gray">*make (optional if you are willing to use prebuilt binaries)*</span>
+        To use REViVeTool, head over to the Releases tab
+        (https://github.com/therealandreww/REViVeTool/releases/tag/v0.3.2)
+        where you can download the latest version of REViVe. It is a
+        precompiled version of the application in the form of a *nix binary.
+        The native code is supported through Linux, however does nothing as
+        Linux distributions do not have such "tweakable" features included.
 
-## How-To-Install
-<a style="border: none; border-radius: 5px; width: 250px; height: auto; padding: 10px; background: rgb(100, 200, 100); margin-bottom: 10px; cursor: pointer; transition-duration: 100ms; display: block; text-decoration: none; color: black;" class="greenbtn" href="">Method 1. Using prebuilt binaries</a>
-<a style="border: none; border-radius: 5px; width: 250px; height: auto; padding: 10px; background: rgb(200, 100, 100); cursor: pointer; transition-duration: 100ms; display: block; text-decoration: none; color: black;" class="redbtn">Method 2. Building manually</a>
--->
+        Once downloaded, you may use the following command to list arguments
+        required for the program to process the input. Example commands are
+        as following:
+
+                # List basic syntax and commands
+                ./revivetool help
+
+                # List features and their action codes
+                ./revivetool list
+
+                # Enables a feature with the action code RVTE13A
+                ./revivetool rvte13a
+
