@@ -7,4 +7,4 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # add_executable(app src/app.cpp)
 # add_executable(test src/test.cpp)
-add_executable(app src/cli.cpp)
+add_executable(app src/app.cpp)
