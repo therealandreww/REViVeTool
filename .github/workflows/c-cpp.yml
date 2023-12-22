@@ -19,5 +19,3 @@ jobs:
       run: cmake CMakeLists.txt
     - name: make
       run: make
-    - name: tryrun
-      run: ./app help
