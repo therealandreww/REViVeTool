@@ -1,0 +1,7 @@
+app
+cli
+test
+CMake*
+CMake*/*
+build
+.vscode
