@@ -20,4 +20,4 @@ jobs:
     - name: make
       run: make
     - name: tryrun
-      run: ./app
+      run: ./app help
