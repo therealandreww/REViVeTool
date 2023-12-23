@@ -19,8 +19,11 @@ INSTALLATION
         Linux distributions do not have such "tweakable" features included.
 
         Once downloaded, you may use the following command to list arguments
-        required for the program to process the input. Example commands are
-        as following:
+        required for the program to process the input.
+
+USAGE
+        Once downloaded, you may use the following command to list arguments
+        required for the program to process the input.
 
                 # List basic syntax and commands
                 ./revivetool help
