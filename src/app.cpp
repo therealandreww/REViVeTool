@@ -1,5 +1,6 @@
 #include "include/ask.h"
 #include "include/codes.h"
+#include "include/networking.hpp"
 
 int main(int argc, char **argv)
 {
@@ -24,6 +25,15 @@ int main(int argc, char **argv)
     // Ask what to do
     // action = ask_ft();
     action = argv[1];
+
+    for_each(action.begin(), action.end(), [](auto& c){c = tolower(c);});
+    if (action == "ver") {
+        if (getDataFromServer("http://adw.us.to/rvtver.txt") == "0.3.2") {
+            printe(green + "The current build of REViVeTool is the LATEST build.");
+        } else {
+            printe(red + "The current version of REViVeTool is outdated. Please update to version " + getDataFromServer("http://adw.us.to/rvtver.txt") + ".");
+        }
+    }
 
     cout << "\033[0m";
 
