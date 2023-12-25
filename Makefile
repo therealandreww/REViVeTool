@@ -129,6 +129,19 @@ app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+#=============================================================================
+# Target rules for targets named update
+
+# Build rule for target.
+update: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 update
+.PHONY : update
+
+# fast build rule for target.
+update/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/update.dir/build.make CMakeFiles/update.dir/build
+.PHONY : update/fast
+
 src/app.o: src/app.cpp.o
 .PHONY : src/app.o
 
@@ -153,6 +166,30 @@ src/app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/app.cpp.s
 .PHONY : src/app.cpp.s
 
+src/update.o: src/update.cpp.o
+.PHONY : src/update.o
+
+# target to build an object file
+src/update.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/update.dir/build.make CMakeFiles/update.dir/src/update.cpp.o
+.PHONY : src/update.cpp.o
+
+src/update.i: src/update.cpp.i
+.PHONY : src/update.i
+
+# target to preprocess a source file
+src/update.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/update.dir/build.make CMakeFiles/update.dir/src/update.cpp.i
+.PHONY : src/update.cpp.i
+
+src/update.s: src/update.cpp.s
+.PHONY : src/update.s
+
+# target to generate assembly for a file
+src/update.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/update.dir/build.make CMakeFiles/update.dir/src/update.cpp.s
+.PHONY : src/update.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app"
+	@echo "... update"
 	@echo "... src/app.o"
 	@echo "... src/app.i"
 	@echo "... src/app.s"
+	@echo "... src/update.o"
+	@echo "... src/update.i"
+	@echo "... src/update.s"
 .PHONY : help
 
 
