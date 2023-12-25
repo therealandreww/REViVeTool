@@ -33,6 +33,7 @@ int main(int argc, char **argv)
         } else {
             printe(red + "The current version of REViVeTool is outdated. Please update to version " + getDataFromServer("http://adw.us.to/rvtver.txt") + ".");
         }
+        exit(0);
     }
 
     cout << "\033[0m";
